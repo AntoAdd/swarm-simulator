@@ -13,7 +13,7 @@ public interface NavigationState {
      *
      * @return all the navigation data describing this navigation state.
      */
-    Map<String, ? extends NavigationData> getAllNavigationData();
+    Map<String, ? extends NavigationData<?>> getAllNavigationData();
 
     /**
      * Returns the corresponding navigation data identified by the given identifier.
@@ -21,5 +21,19 @@ public interface NavigationState {
      * @param identifier the identifier used to retrieve the corresponding navigation data.
      * @return the corresponding navigation data identified by the given identifier.
      */
-    NavigationData getNavigationDataIdentifiedBy(String identifier);
+    NavigationData<?> getNavigationDataIdentifiedBy(String identifier);
+
+    /**
+     * Returns true if the robot is currently signaling a condition, false otherwise.
+     *
+     * @return true if the robot is currently signaling a condition, false otherwise.
+     */
+    boolean isSignaling();
+
+    /**
+     * Returns true if the robot is currently moving, false otherwise.
+     *
+     * @return true if the robot is currently moving, false otherwise.
+     */
+    boolean isMoving();
 }
