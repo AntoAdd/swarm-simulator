@@ -6,7 +6,7 @@ package it.unicam.cs.pa.swarmsimulator.model;
  *
  * @param <S> the type of navigation state obtained from the execution of this command.
  */
-public interface RobotCommand<S extends NavigationState> {
+public interface RobotCommand<S extends RobotState> {
     /**
      * Returns the navigation state obtained from the execution of this command on its inputs.
      *

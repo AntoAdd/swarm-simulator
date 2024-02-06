@@ -3,7 +3,7 @@ package it.unicam.cs.pa.swarmsimulator.model;
 /**
  * A Program Executor executes commands of a robot program. Each robot uses a program executor to run its commands.
  */
-public interface ProgramExecutor<S extends NavigationState> {
+public interface ProgramExecutor<S extends RobotState> {
     /**
      * Returns true if there are no more commands to execute, false otherwise.
      *

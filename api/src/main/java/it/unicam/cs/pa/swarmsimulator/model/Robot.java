@@ -1,7 +1,5 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
-import java.util.Optional;
-
 /**
  * A Robot interface is used to represent a robot in the swarm. A robot collects and updates navigation data,
  * describing its movement and signaling data at a given time.
@@ -10,7 +8,7 @@ import java.util.Optional;
  *
  * @param <S> the type of navigation state of this robot.
  */
-public interface Robot<S extends NavigationState> {
+public interface Robot<S extends RobotState> {
     /**
      * Returns the identifier for this robot.
      *
@@ -31,8 +29,4 @@ public interface Robot<S extends NavigationState> {
      */
     void updateNavigationState(S s);
 
-    /**
-     * Starts the execution of this robot.
-     */
-    void startExecution();
 }
