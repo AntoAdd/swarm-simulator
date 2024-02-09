@@ -1,6 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
 import java.util.Collection;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -10,22 +11,23 @@ import java.util.Optional;
  * robot positions in time.
  *
  * @param <S> the type of the robots' navigation state.
+ * @param <C> the type of positions in this environment.
  */
-public interface Environment<S extends RobotState> {
+public interface Environment<S extends RobotState, C extends Position<C>> {
     /**
      * Returns the position of the given robot in the environment.
      *
      * @param robot the given robot.
      * @return the position of the given robot in the environment.
      */
-    Position getRobotPosition(Robot<S> robot);
+    C getRobotPosition(Robot<S> robot);
 
     /**
      * Returns the current positions of all the robots in the environment.
      *
      * @return the current positions of all the robots in the environment.
      */
-    Collection<Position> getRobotPositions();
+    Collection<C> getRobotPositions();
 
     /**
      * Returns all the robots that are signaling a given condition and are in range from the given robot.
@@ -43,14 +45,14 @@ public interface Environment<S extends RobotState> {
      * @param area the given area.
      * @return the position of the given area's center in the environment.
      */
-    Position getSignalingAreaPosition(SignalingArea area);
+    C getSignalingAreaPosition(SignalingArea<C> area);
 
     /**
      * Returns the positions of the signaling areas' centers in the environment.
      *
      * @return the positions of the signaling areas' centers in the environment.
      */
-    Collection<Position> getSignalingAreaPositions();
+    Collection<C> getSignalingAreaPositions();
 
     /**
      * Returns the robots that are present in the given signaling area.
@@ -59,7 +61,7 @@ public interface Environment<S extends RobotState> {
      * @param area the given signaling area.
      * @return the robots that are present in the given signaling area.
      */
-    Collection<Robot<S>> getRobotsInArea(SignalingArea area);
+    Collection<Robot<S>> getRobotsInArea(SignalingArea<C> area);
 
     /**
      * Returns the area that the given robot is occupying. If the robot is not present in any areas of
@@ -68,5 +70,13 @@ public interface Environment<S extends RobotState> {
      * @param robot the given robot.
      * @return the area that the given robot is occupying, id exists.
      */
-    Optional<SignalingArea> getAreaOccupiedBy(Robot<S> robot);
+    Optional<SignalingArea<C>> getAreaOccupiedBy(Robot<S> robot);
+
+    /**
+     * Updates this environment with the new robot positions.
+     *
+     * @param updatedConfiguration the new configuration of the robots in this environment.
+     * @return the evolved environment.
+     */
+    Environment<S, C> evolve(Map<Robot<S>, C> updatedConfiguration);
 }
