@@ -68,7 +68,7 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * the environment, an <code>Optional.empty()</code> is returned.
      *
      * @param robot the given robot.
-     * @return the area that the given robot is occupying, id exists.
+     * @return the area that the given robot is occupying, if exists.
      */
     Optional<SignalingArea<C>> getAreaOccupiedBy(Robot<S> robot);
 
