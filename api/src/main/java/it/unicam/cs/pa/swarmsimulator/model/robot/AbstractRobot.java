@@ -1,4 +1,6 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.robot;
+
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
 
 import java.util.Objects;
 

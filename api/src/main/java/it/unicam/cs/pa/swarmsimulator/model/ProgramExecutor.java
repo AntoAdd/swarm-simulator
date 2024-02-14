@@ -1,5 +1,8 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
+import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
+
 /**
  * A Program Executor executes commands of a robot program. Each robot uses a program executor to run its commands.
  */

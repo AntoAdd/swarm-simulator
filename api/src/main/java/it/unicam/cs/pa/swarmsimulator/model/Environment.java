@@ -1,8 +1,12 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
+import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
+import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
+
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 /**
  * This interface represents the environment in which the swarm moves.
@@ -14,20 +18,21 @@ import java.util.Optional;
  * @param <C> the type of positions in this environment.
  */
 public interface Environment<S extends RobotState, C extends Position<C>> {
+    Robot<S> getRobot(long id);
     /**
      * Returns the position of the given robot in the environment.
      *
-     * @param robot the given robot.
+     * @param robotId the given robot.
      * @return the position of the given robot in the environment.
      */
-    C getRobotPosition(Robot<S> robot);
+    C getRobotPosition(Robot<S> robotId);
 
     /**
      * Returns the current positions of all the robots in the environment.
      *
      * @return the current positions of all the robots in the environment.
      */
-    Collection<C> getRobotPositions();
+    List<C> getRobotPositions();
 
     /**
      * Returns all the robots that are signaling a given condition and are in range from the given robot.
@@ -37,7 +42,7 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * @param distance the distance used to calculate the range of perception of the robot.
      * @return all the robots that are signaling a given condition and are in range from the given robot.
      */
-    Collection<Robot<S>> getSignalingRobotsInRange(Robot<S> robot, String condition, double distance);
+    List<Robot<S>> getSignalingRobotsInRange(Robot<S> robot, String condition, double distance);
 
     /**
      * Returns the position of the given area's center in the environment.
@@ -52,7 +57,7 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      *
      * @return the positions of the signaling areas' centers in the environment.
      */
-    Collection<C> getSignalingAreaPositions();
+    List<C> getSignalingAreaPositions();
 
     /**
      * Returns the robots that are present in the given signaling area.
@@ -61,7 +66,7 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * @param area the given signaling area.
      * @return the robots that are present in the given signaling area.
      */
-    Collection<Robot<S>> getRobotsInArea(SignalingArea<C> area);
+    List<Robot<S>> getRobotsInArea(SignalingArea<C> area);
 
     /**
      * Returns the area that the given robot is occupying. If the robot is not present in any areas of
@@ -70,7 +75,7 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * @param robot the given robot.
      * @return the area that the given robot is occupying, if exists.
      */
-    Optional<SignalingArea<C>> getAreaOccupiedBy(Robot<S> robot);
+    List<SignalingArea<C>> getAreasOccupiedBy(Robot<S> robot);
 
     /**
      * Updates this environment with the new robot positions.

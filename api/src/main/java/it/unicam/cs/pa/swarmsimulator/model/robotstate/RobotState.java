@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.robotstate;
 
 /**
  * This interface represents the navigation state of a robot.

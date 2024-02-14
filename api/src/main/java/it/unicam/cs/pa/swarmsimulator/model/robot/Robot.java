@@ -1,4 +1,6 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.robot;
+
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
 
 /**
  * A Robot interface is used to represent a robot in the swarm. A robot collects and updates navigation data,

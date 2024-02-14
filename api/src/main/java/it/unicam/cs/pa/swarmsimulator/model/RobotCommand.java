@@ -1,5 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
+
 /**
  * A robot command produces a navigation state for the robot that executes it.
  * A command can be executed on different type of inputs or on no input at all.

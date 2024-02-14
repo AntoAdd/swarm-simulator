@@ -1,4 +1,6 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.area;
+
+import it.unicam.cs.pa.swarmsimulator.model.Position;
 
 /**
  * A signaling area occupies a region in the environment and signals a condition to the robots that fly

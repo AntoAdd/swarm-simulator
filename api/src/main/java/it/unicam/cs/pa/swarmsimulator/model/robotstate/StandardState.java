@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.robotstate;
 
 import it.unicam.cs.pa.swarmsimulator.model.util.Pair;
 

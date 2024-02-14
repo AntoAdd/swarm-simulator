@@ -1,4 +1,6 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.area;
+
+import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
 
 import java.util.Objects;
 
@@ -30,5 +32,18 @@ public class CircleArea implements SignalingArea<PlainLocation>{
     @Override
     public boolean contains(PlainLocation position) {
         return centerPosition.distanceFrom(position) < radius;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CircleArea that = (CircleArea) o;
+        return Double.compare(that.radius, radius) == 0 && Objects.equals(centerPosition, that.centerPosition) && Objects.equals(signaledCondition, that.signaledCondition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(centerPosition, signaledCondition, radius);
     }
 }

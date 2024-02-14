@@ -1,8 +1,8 @@
 package it.unicam.cs.pa.swarmsimulator.test;
 
-import it.unicam.cs.pa.swarmsimulator.model.Robot;
-import it.unicam.cs.pa.swarmsimulator.model.StandardRobot;
-import it.unicam.cs.pa.swarmsimulator.model.StandardState;
+import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
+import it.unicam.cs.pa.swarmsimulator.model.robot.StandardRobot;
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 import it.unicam.cs.pa.swarmsimulator.model.util.Pair;
 import org.junit.jupiter.api.Test;
 

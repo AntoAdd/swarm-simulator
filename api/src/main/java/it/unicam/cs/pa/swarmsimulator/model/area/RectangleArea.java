@@ -1,4 +1,6 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.area;
+
+import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
 
 import java.util.Objects;
 
@@ -37,5 +39,18 @@ public class RectangleArea implements SignalingArea<PlainLocation>{
     public boolean contains(PlainLocation position) {
         return Math.abs(position.x() - centerPosition.x()) < width/2
             && Math.abs(position.y() - centerPosition.y()) < height/2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        RectangleArea that = (RectangleArea) o;
+        return Double.compare(that.width, width) == 0 && Double.compare(that.height, height) == 0 && Objects.equals(centerPosition, that.centerPosition) && Objects.equals(signaledCondition, that.signaledCondition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(centerPosition, signaledCondition, width, height);
     }
 }
