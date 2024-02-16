@@ -6,10 +6,8 @@ import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
 import it.unicam.cs.pa.swarmsimulator.model.area.CircleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
-import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
-import it.unicam.cs.pa.swarmsimulator.model.robot.StandardRobot;
+import it.unicam.cs.pa.swarmsimulator.model.robot.*;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
-import it.unicam.cs.pa.swarmsimulator.model.util.Pair;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -52,10 +50,10 @@ public class EnvironmentTest {
     @Order(2)
     public void robotsSignalingInRangeShouldBeReturned(){
         environment.getRobot(2).updateNavigationState(
-            new StandardState(0.0, new Pair<>(0.0, 0.0), "a")
+            new StandardState(new Speed(0.0), new Direction(0.0), new SignalingCondition("a"))
         );
         environment.getRobot(3).updateNavigationState(
-            new StandardState(0.0, new Pair<>(0.0, 0.0), "a")
+            new StandardState(new Speed(0.0), new Direction(0.0), new SignalingCondition("a"))
         );
 
         List<Robot<StandardState>> robotsInRange = environment.getSignalingRobotsInRange(

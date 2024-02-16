@@ -4,9 +4,10 @@ import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
 
-import java.util.Collection;
+
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * This interface represents the environment in which the swarm moves.
@@ -19,6 +20,8 @@ import java.util.Map;
  */
 public interface Environment<S extends RobotState, C extends Position<C>> {
     Robot<S> getRobot(long id);
+
+    Set<Robot<S>> getRobots();
     /**
      * Returns the position of the given robot in the environment.
      *
@@ -43,6 +46,8 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * @return all the robots that are signaling a given condition and are in range from the given robot.
      */
     List<Robot<S>> getSignalingRobotsInRange(Robot<S> robot, String condition, double distance);
+
+    List<C> getPositionsOf(List<Robot<S>> robots);
 
     /**
      * Returns the position of the given area's center in the environment.
@@ -76,6 +81,14 @@ public interface Environment<S extends RobotState, C extends Position<C>> {
      * @return the area that the given robot is occupying, if exists.
      */
     List<SignalingArea<C>> getAreasOccupiedBy(Robot<S> robot);
+
+    /**
+     * Updates the state of the given robot with a new given state.
+     *
+     * @param robot the given robot.
+     * @param state the new state used to update the robot.
+     */
+    void updateRobotState(Robot<S> robot, S state);
 
     /**
      * Updates this environment with the new robot positions.

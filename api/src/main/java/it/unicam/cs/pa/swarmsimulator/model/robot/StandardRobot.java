@@ -5,6 +5,6 @@ import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 public class StandardRobot extends AbstractRobot<StandardState>{
     public StandardRobot(long id) {
         super(id);
-        updateNavigationState(new StandardState());
+        updateNavigationState(StandardState.getInitialState());
     }
 }

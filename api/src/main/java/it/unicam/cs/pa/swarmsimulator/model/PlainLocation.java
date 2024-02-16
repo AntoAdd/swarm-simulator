@@ -1,5 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
+import it.unicam.cs.pa.swarmsimulator.model.robot.Direction;
+
 /**
  * Represents a location in the infinite plain space.
  *
@@ -10,6 +12,11 @@ public record PlainLocation(double x, double y) implements Position<PlainLocatio
 
     public double distanceFrom(PlainLocation location){
         return Math.sqrt(Math.pow(location.x() - x, 2) + Math.pow(location.y() - y, 2));
+    }
+
+    public Direction directionTo(PlainLocation location){
+        double angle = Math.toDegrees(Math.atan2(location.y() - y, location.x() - x));
+        return new Direction(angle);
     }
 
     @Override

@@ -16,7 +16,8 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
 
     public PlainEnvironment(
         Map<Robot<StandardState>, PlainLocation> robotConfiguration,
-        List<SignalingArea<PlainLocation>> signalingAreas) {
+        List<SignalingArea<PlainLocation>> signalingAreas
+    ) {
         this.robotConfiguration = Objects.requireNonNull(robotConfiguration);
         this.signalingAreas = Objects.requireNonNull(signalingAreas);
     }
@@ -27,6 +28,12 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
             .filter(r -> r.getId() == id)
             .findFirst()
             .orElseThrow();
+    }
+
+    @Override
+    public
+    Set<Robot<StandardState>> getRobots() {
+        return robotConfiguration.keySet();
     }
 
     @Override
@@ -45,9 +52,19 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
         return robotConfiguration.entrySet().stream()
             .filter(e -> !e.getKey().equals(robot))
             .filter(e -> e.getValue().distanceFrom(robotPosition) <= distance)
-            .filter(e -> e.getKey().getNavigationState().getCondition().equals(condition))
+            .filter(e -> e.getKey().getNavigationState().getCondition().getValue().equals(condition))
             .map(Map.Entry::getKey)
             .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PlainLocation> getPositionsOf(List<Robot<StandardState>> robots) {
+        List<PlainLocation> positions = new ArrayList<>();
+        for (Robot<StandardState> r:
+             robots) {
+            positions.add(robotConfiguration.get(r));
+        }
+        return positions;
     }
 
     @Override
@@ -78,6 +95,11 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
         return signalingAreas.stream()
             .filter(a -> a.contains(getRobotPosition(robot)))
             .collect(Collectors.toList());
+    }
+
+    @Override
+    public void updateRobotState(Robot<StandardState> robot, StandardState state) {
+        getRobot(robot.getId()).updateNavigationState(state);
     }
 
     @Override

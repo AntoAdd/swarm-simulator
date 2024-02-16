@@ -1,9 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.test;
 
-import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
-import it.unicam.cs.pa.swarmsimulator.model.robot.StandardRobot;
+import it.unicam.cs.pa.swarmsimulator.model.robot.*;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
-import it.unicam.cs.pa.swarmsimulator.model.util.Pair;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,7 +11,7 @@ public class RobotTest {
     @Test
     public void shouldHaveCorrectInitialState(){
         Robot<StandardState> r = new StandardRobot(1);
-        StandardState initialState = new StandardState();
+        StandardState initialState = StandardState.getInitialState();
 
         assertEquals(initialState, r.getNavigationState());
     }
@@ -29,7 +27,9 @@ public class RobotTest {
     @Test
     public void stateShouldBeUpdatedCorrectly(){
         Robot<StandardState> r = new StandardRobot(1);
-        StandardState updateState = new StandardState(22.5, new Pair<>(0.0, 5.2), "a");
+        StandardState updateState = new StandardState(
+            new Speed(22.5), new Direction(15.0), new SignalingCondition("a")
+        );
         r.updateNavigationState(updateState);
 
         assertEquals(updateState, r.getNavigationState());
@@ -43,7 +43,7 @@ public class RobotTest {
         StandardState updateState = new StandardState(
             initialState.getSpeed(),
             initialState.getDirection(),
-            "a"
+            new SignalingCondition("a")
         );
 
         r.updateNavigationState(updateState);
@@ -57,7 +57,7 @@ public class RobotTest {
         StandardState initialState = r.getNavigationState();
 
         StandardState updateState = new StandardState(
-            55.7,
+            new Speed(55.7),
             initialState.getDirection(),
             initialState.getCondition()
         );
