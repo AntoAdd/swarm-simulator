@@ -21,4 +21,6 @@ public sealed interface RobotCommand permits Continue, Done, Follow, Forever, Mo
     default boolean hasFinishedExecution(){
         return true;
     }
+
+    RobotCommand getCopy();
 }

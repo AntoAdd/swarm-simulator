@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.utilities;
+package it.unicam.cs.pa.swarmsimulator.io;
 
 public class FollowMeParserUtil {
 

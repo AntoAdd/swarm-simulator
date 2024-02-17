@@ -1,7 +1,9 @@
 package it.unicam.cs.pa.swarmsimulator.model.commands;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public final class Repeat implements RobotCommand {
     private final int reps;
@@ -14,6 +16,17 @@ public final class Repeat implements RobotCommand {
         this.subcommands = Collections.unmodifiableList(subcommands);
         this.remainingReps = reps;
         this.nextSubcommandIndex = 0;
+    }
+
+    public Repeat(int reps) {
+        this.reps = reps;
+        this.subcommands = new ArrayList<>();
+        this.remainingReps = reps;
+        this.nextSubcommandIndex = 0;
+    }
+
+    public void addCommand(RobotCommand command){
+        subcommands.add(Objects.requireNonNull(command));
     }
 
     public int getReps() {
@@ -48,5 +61,15 @@ public final class Repeat implements RobotCommand {
     @Override
     public boolean hasFinishedExecution() {
         return remainingReps == 0;
+    }
+
+    @Override
+    public RobotCommand getCopy() {
+        List<RobotCommand> subcommandsCopy = new ArrayList<>();
+        for (RobotCommand c :
+            subcommands) {
+            subcommandsCopy.add(c.getCopy());
+        }
+        return new Repeat(reps, subcommandsCopy);
     }
 }

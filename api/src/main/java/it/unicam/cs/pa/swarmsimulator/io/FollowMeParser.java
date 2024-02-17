@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.utilities;
+package it.unicam.cs.pa.swarmsimulator.io;
 
 
 import java.io.File;
@@ -203,7 +203,7 @@ public final class FollowMeParser {
     }
 
     private void callMoveMethod(FollowMeParserHandler handler, String[] elements) throws FollowMeParserException {
-        if (elements.length == 6) {
+        if (elements.length == 4) {
             handler.moveCommand(toDoubleArray(1,elements));
         } else {
             throwSyntaxErrorException();
@@ -211,7 +211,7 @@ public final class FollowMeParser {
     }
 
     private void callMoveRandomMethod(FollowMeParserHandler handler, String[] elements) throws FollowMeParserException {
-        if (elements.length == 6) {
+        if (elements.length == 7) {
             handler.moveRandomCommand(toDoubleArray(2,elements));
         } else {
             throwSyntaxErrorException();

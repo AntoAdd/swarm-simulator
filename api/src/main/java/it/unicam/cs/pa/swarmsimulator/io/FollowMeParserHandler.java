@@ -1,4 +1,9 @@
-package it.unicam.cs.pa.swarmsimulator.utilities;
+package it.unicam.cs.pa.swarmsimulator.io;
+
+import it.unicam.cs.pa.swarmsimulator.model.commands.RobotCommand;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  * This interface is implemented to handle parsing of robot programs. Instances of this interface
@@ -13,6 +18,8 @@ package it.unicam.cs.pa.swarmsimulator.utilities;
  *
  */
 public interface FollowMeParserHandler {
+
+    Optional<List<RobotCommand>> getParsedProgram();
 
 
     /**

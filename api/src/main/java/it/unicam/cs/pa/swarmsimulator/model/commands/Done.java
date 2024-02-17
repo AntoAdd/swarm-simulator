@@ -6,4 +6,9 @@ public record Done(RobotCommand containerCommand) implements RobotCommand {
     public Done(RobotCommand containerCommand) {
         this.containerCommand = Objects.requireNonNull(containerCommand);
     }
+
+    @Override
+    public RobotCommand getCopy() {
+        return new Done(containerCommand.getCopy());
+    }
 }

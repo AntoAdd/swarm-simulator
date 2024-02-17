@@ -19,4 +19,9 @@ public final class Continue implements RobotCommand {
     public boolean hasFinishedExecution() {
         return seconds == 0;
     }
+
+    @Override
+    public RobotCommand getCopy() {
+        return new Continue(seconds);
+    }
 }
