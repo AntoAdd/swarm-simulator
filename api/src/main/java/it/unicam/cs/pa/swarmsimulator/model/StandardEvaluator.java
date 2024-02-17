@@ -8,6 +8,7 @@ import it.unicam.cs.pa.swarmsimulator.model.robot.SignalingCondition;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Speed;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 import it.unicam.cs.pa.swarmsimulator.model.util.Pair;
+import org.decimal4j.util.DoubleRounder;
 
 import java.util.List;
 import java.util.Objects;
@@ -95,8 +96,8 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
         StandardState state = robot.getNavigationState();
         PlainLocation source = evaluationEnvironment.getRobotPosition(robot);
         double radiansAngle = Math.toRadians(state.getDirection().getValue());
-        double xTarget = source.x() + state.getSpeed().getValue() * Math.cos(radiansAngle);
-        double yTarget = source.y() + state.getSpeed().getValue() * Math.sin(radiansAngle);
+        double xTarget = source.x() + state.getSpeed().getValue() * DoubleRounder.round(Math.cos(radiansAngle), 8);
+        double yTarget = source.y() + state.getSpeed().getValue() * DoubleRounder.round(Math.sin(radiansAngle), 8);
         return new PlainLocation(xTarget, yTarget);
     }
 

@@ -104,9 +104,6 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
 
     @Override
     public Environment<StandardState, PlainLocation> evolve(Map<Robot<StandardState>, PlainLocation> updatedConfiguration) {
-        if (updatedConfiguration.keySet().stream().allMatch(robotConfiguration::containsKey))
-            return new PlainEnvironment(updatedConfiguration, List.copyOf(signalingAreas));
-        else
-            throw new IllegalArgumentException("robots in the updated map don't match with robots in the environment");
+            return new PlainEnvironment(Objects.requireNonNull(updatedConfiguration), List.copyOf(signalingAreas));
     }
 }
