@@ -9,4 +9,9 @@ public record Follow(SignalingCondition condition, double distance, Speed speed)
     public RobotCommand getCopy() {
         return new Follow(new SignalingCondition(condition().getValue()), distance, new Speed(speed.getValue()));
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

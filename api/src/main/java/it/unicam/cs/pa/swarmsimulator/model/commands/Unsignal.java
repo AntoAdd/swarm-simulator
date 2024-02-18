@@ -7,4 +7,9 @@ public record Unsignal(SignalingCondition condition) implements RobotCommand {
     public RobotCommand getCopy() {
         return new Unsignal(new SignalingCondition(condition().getValue()));
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

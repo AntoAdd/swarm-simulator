@@ -71,4 +71,9 @@ public final class Until implements RobotCommand {
         }
         return new Until(new SignalingCondition(condition.getValue()), subcommandsCopy);
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

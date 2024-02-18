@@ -11,4 +11,9 @@ public record Done(RobotCommand containerCommand) implements RobotCommand {
     public RobotCommand getCopy() {
         return new Done(containerCommand.getCopy());
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

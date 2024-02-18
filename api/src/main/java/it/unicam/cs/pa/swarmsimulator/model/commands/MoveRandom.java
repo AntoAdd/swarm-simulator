@@ -14,4 +14,9 @@ public record MoveRandom(Position<PlainLocation> first, Position<PlainLocation> 
             new Speed(speed.getValue())
         );
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

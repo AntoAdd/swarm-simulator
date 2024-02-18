@@ -54,4 +54,9 @@ public final class Forever implements RobotCommand {
         }
         return new Forever(subcommandsCopy);
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

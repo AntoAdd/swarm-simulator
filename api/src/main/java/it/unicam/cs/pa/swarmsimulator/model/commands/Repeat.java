@@ -72,4 +72,9 @@ public final class Repeat implements RobotCommand {
         }
         return new Repeat(reps, subcommandsCopy);
     }
+
+    @Override
+    public void reset() {
+        this.remainingReps = reps;
+    }
 }

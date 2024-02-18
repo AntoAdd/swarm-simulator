@@ -53,14 +53,26 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
             case Repeat repeat -> {
                 repeat.decreaseRemainingReps();
                 repeat.setNextSubcommandIndex(0);
+                resetSubcommandsIfNotFinished(repeat);
             }
-            case Forever forever -> forever.setNextSubcommandIndex(0);
-            case Until until -> until.setNextSubcommandIndex(0);
+            case Forever forever -> {
+                forever.setNextSubcommandIndex(0);
+                resetSubcommandsIfNotFinished(forever);
+            }
+            case Until until -> {
+                until.setNextSubcommandIndex(0);
+                resetSubcommandsIfNotFinished(until);
+            }
             default -> throw new IllegalStateException("Unexpected value: " + done.containerCommand());
         }
         return new Pair<>(
             robot.getNavigationState(), evaluationEnvironment.getRobotPosition(robot)
         );
+    }
+
+    private void resetSubcommandsIfNotFinished(RobotCommand command) {
+        if (!command.hasFinishedExecution())
+            command.getSubcommandsList().forEach(RobotCommand::reset);
     }
 
     private Pair<StandardState, PlainLocation> evaluateUntil(Robot<StandardState> robot, Until until) {

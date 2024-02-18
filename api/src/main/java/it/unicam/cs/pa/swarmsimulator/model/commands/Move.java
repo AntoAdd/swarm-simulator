@@ -11,4 +11,9 @@ public record Move(Position<PlainLocation> target,
         return new Move(new PlainLocation(target.getPositionCoordinates().x(), target.getPositionCoordinates().y()),
             new Speed(speed().getValue()));
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

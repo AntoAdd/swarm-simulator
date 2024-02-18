@@ -7,4 +7,9 @@ public record Signal(SignalingCondition condition) implements RobotCommand {
     public RobotCommand getCopy() {
         return new Signal(new SignalingCondition(condition().getValue()));
     }
+
+    @Override
+    public void reset() {
+
+    }
 }

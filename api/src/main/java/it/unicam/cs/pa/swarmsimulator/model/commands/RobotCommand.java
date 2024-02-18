@@ -22,5 +22,15 @@ public sealed interface RobotCommand permits Continue, Done, Follow, Forever, Mo
         return true;
     }
 
+    /**
+     * Returns a deep copy of this command.
+     *
+     * @return a deep copy of this command.
+     */
     RobotCommand getCopy();
+
+    /**
+     * Resets mutable data of this command.
+     */
+    void reset();
 }

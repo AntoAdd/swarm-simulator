@@ -5,4 +5,9 @@ public final class Stop implements RobotCommand{
     public RobotCommand getCopy() {
         return new Stop();
     }
+
+    @Override
+    public void reset() {
+
+    }
 }
