@@ -2,6 +2,8 @@ package it.unicam.cs.pa.swarmsimulator.model;
 
 import it.unicam.cs.pa.swarmsimulator.model.robot.Direction;
 
+import java.util.Random;
+
 /**
  * Represents a location in the infinite plain space.
  *
@@ -9,6 +11,17 @@ import it.unicam.cs.pa.swarmsimulator.model.robot.Direction;
  * @param y the y coordinate in the plain.
  */
 public record PlainLocation(double x, double y) implements Position<PlainLocation> {
+    /**
+     * Constructs a random position.
+     */
+    public PlainLocation() {
+        this(getRandomValue(), getRandomValue());
+    }
+
+    private static double getRandomValue() {
+        Random r = new Random();
+        return Double.MAX_VALUE * r.nextDouble() * (r.nextBoolean() ? 1 : -1);
+    }
 
     public double distanceFrom(PlainLocation location){
         return Math.sqrt(Math.pow(location.x() - x, 2) + Math.pow(location.y() - y, 2));

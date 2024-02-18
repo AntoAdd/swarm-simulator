@@ -7,4 +7,9 @@ public class StandardRobot extends AbstractRobot<StandardState>{
         super(id);
         updateNavigationState(StandardState.getInitialState());
     }
+
+    @Override
+    public String toString() {
+        return "StandardRobot: " + super.getId() + ", " + super.getNavigationState();
+    }
 }

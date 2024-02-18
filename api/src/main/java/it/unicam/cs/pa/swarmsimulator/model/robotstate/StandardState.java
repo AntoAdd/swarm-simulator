@@ -65,4 +65,13 @@ public class StandardState implements RobotState{
     public int hashCode() {
         return Objects.hash(speed, direction, condition);
     }
+
+    @Override
+    public String toString() {
+        return "StandardState{" +
+            "speed=" + speed +
+            ", direction=" + direction +
+            ", condition=" + condition +
+            '}';
+    }
 }

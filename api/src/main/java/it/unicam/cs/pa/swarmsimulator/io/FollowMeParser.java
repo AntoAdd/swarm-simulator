@@ -25,6 +25,10 @@ public final class FollowMeParser {
         this.checker = checker;
     }
 
+    public FollowMeParserHandler getHandler() {
+        return handler;
+    }
+
     public FollowMeParser(FollowMeParserHandler handler) {
         this(handler, FollowMeShapeChecker.DEFAULT_CHECKER);
     }

@@ -106,4 +106,12 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
     public Environment<StandardState, PlainLocation> evolve(Map<Robot<StandardState>, PlainLocation> updatedConfiguration) {
             return new PlainEnvironment(Objects.requireNonNull(updatedConfiguration), List.copyOf(signalingAreas));
     }
+
+    @Override
+    public String toString() {
+        return "PlainEnvironment{" +
+            "robotConfiguration=" + robotConfiguration +
+            ", signalingAreas=" + signalingAreas +
+            '}';
+    }
 }
