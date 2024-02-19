@@ -22,9 +22,9 @@ public class App {
 
         EnvironmentWriter<StandardState, PlainLocation> writer = new StandardWriter();
 
-        File envFile = new File("app/src/main/resources/robot_environment.txt");
-        File programFile = new File("app/src/main/resources/robot_program.txt");
-        File resultsFile = new File("app/src/main/resources/simulation_results.txt");
+        File envFile = new File("src/main/resources/robot_environment.txt");
+        File programFile = new File("src/main/resources/robot_program.txt");
+        File resultsFile = new File("src/main/resources/simulation_results.txt");
 
         Simulator s = new SwarmSimulator(
             builder,

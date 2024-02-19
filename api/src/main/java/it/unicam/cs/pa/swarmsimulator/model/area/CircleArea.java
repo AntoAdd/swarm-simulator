@@ -46,4 +46,13 @@ public class CircleArea implements SignalingArea<PlainLocation>{
     public int hashCode() {
         return Objects.hash(centerPosition, signaledCondition, radius);
     }
+
+    @Override
+    public String toString() {
+        return "CircleArea{" +
+            "centerPosition=" + centerPosition +
+            ", signaledCondition='" + signaledCondition + '\'' +
+            ", radius=" + radius +
+            '}';
+    }
 }

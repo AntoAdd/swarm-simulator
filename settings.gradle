@@ -11,6 +11,6 @@ plugins {
 }
 
 rootProject.name = 'swarm-simulator'
-include('app', 'list', 'utilities')
-include 'api'
+include('app', 'list', 'utilities', 'api')
+
 

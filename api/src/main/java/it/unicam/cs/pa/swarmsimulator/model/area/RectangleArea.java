@@ -53,4 +53,14 @@ public class RectangleArea implements SignalingArea<PlainLocation>{
     public int hashCode() {
         return Objects.hash(centerPosition, signaledCondition, width, height);
     }
+
+    @Override
+    public String toString() {
+        return "RectangleArea{" +
+            "centerPosition=" + centerPosition +
+            ", signaledCondition='" + signaledCondition + '\'' +
+            ", width=" + width +
+            ", height=" + height +
+            '}';
+    }
 }

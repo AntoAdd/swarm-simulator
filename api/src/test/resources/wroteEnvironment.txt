@@ -1,2 +1,92 @@
 PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
 PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[it.unicam.cs.pa.swarmsimulator.model.area.CircleArea@a2e880b9, it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea@60ff8763]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]}
+PlainEnvironment{robotConfiguration={StandardRobot: 1, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=1.0, y=2.0}, StandardRobot: 2, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=6.0, y=2.0}, StandardRobot: 3, StandardState{speed=StateComponent{value=0.0}, direction=StateComponent{value=0.0}, condition=StateComponent{value=}}=PlainLocation{x=11.0, y=2.0}}, signalingAreas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]}
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+{Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+{Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=1.0, y=2.0}}
+{Robot: 2, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=6.0, y=2.0}}
+{Robot: 3, speed: 0.0, dir: 0.0, signal: =PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=1.0, y=2.0}}
+{Robot: 2, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=6.0, y=2.0}}
+{Robot: 3, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=1.0, y=2.0}}
+{Robot: 2, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=6.0, y=2.0}}
+{Robot: 3, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=11.0, y=2.0}}
+
+Areas=[CircleArea{centerPosition=PlainLocation{x=3.0, y=0.0}, signaledCondition='f', radius=1.0}, RectangleArea{centerPosition=PlainLocation{x=-3.0, y=-3.0}, signaledCondition='b', width=4.0, height=2.0}]
+
+

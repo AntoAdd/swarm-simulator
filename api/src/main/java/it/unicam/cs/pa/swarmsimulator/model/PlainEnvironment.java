@@ -109,9 +109,15 @@ public class PlainEnvironment implements Environment<StandardState, PlainLocatio
 
     @Override
     public String toString() {
-        return "PlainEnvironment{" +
-            "robotConfiguration=" + robotConfiguration +
-            ", signalingAreas=" + signalingAreas +
-            '}';
+        StringBuilder s = new StringBuilder("Environment=");
+        robotConfiguration.forEach((key, value) -> {
+            s.append("{Robot: ").append(key.getId()).append(", ");
+            s.append("speed: ").append(key.getNavigationState().getSpeed().getValue()).append(", ");
+            s.append("dir: ").append(key.getNavigationState().getDirection().getValue()).append(", ");
+            s.append("signal: ").append(key.getNavigationState().getCondition().getValue()).append(", ");
+            s.append(value).append("}").append("\n");
+        });
+        s.append("\nAreas=").append(signalingAreas).append("\n\n");
+        return s.toString();
     }
 }
