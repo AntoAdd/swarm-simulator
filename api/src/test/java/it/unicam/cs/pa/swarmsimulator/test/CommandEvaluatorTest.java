@@ -1,10 +1,14 @@
 package it.unicam.cs.pa.swarmsimulator.test;
 
-import it.unicam.cs.pa.swarmsimulator.model.*;
 import it.unicam.cs.pa.swarmsimulator.model.area.CircleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
 import it.unicam.cs.pa.swarmsimulator.model.commands.*;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainEnvironment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.execution.CommandEvaluator;
+import it.unicam.cs.pa.swarmsimulator.model.execution.StandardEvaluator;
 import it.unicam.cs.pa.swarmsimulator.model.robot.*;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 import it.unicam.cs.pa.swarmsimulator.model.util.Pair;

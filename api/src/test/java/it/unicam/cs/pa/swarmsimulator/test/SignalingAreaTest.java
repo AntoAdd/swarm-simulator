@@ -1,9 +1,10 @@
 package it.unicam.cs.pa.swarmsimulator.test;
 
-import it.unicam.cs.pa.swarmsimulator.model.*;
 import it.unicam.cs.pa.swarmsimulator.model.area.CircleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Position;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

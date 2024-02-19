@@ -2,11 +2,14 @@ package it.unicam.cs.pa.swarmsimulator.model;
 
 import it.unicam.cs.pa.swarmsimulator.io.*;
 import it.unicam.cs.pa.swarmsimulator.model.commands.RobotCommand;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.execution.ProgramExecutor;
+import it.unicam.cs.pa.swarmsimulator.model.execution.StandardProgramExecutor;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 

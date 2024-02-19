@@ -1,6 +1,8 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.execution;
 
 import it.unicam.cs.pa.swarmsimulator.model.commands.RobotCommand;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 import it.unicam.cs.pa.swarmsimulator.model.util.Pair;

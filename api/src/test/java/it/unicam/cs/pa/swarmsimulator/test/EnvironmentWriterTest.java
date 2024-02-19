@@ -2,9 +2,9 @@ package it.unicam.cs.pa.swarmsimulator.test;
 
 import it.unicam.cs.pa.swarmsimulator.io.EnvironmentWriter;
 import it.unicam.cs.pa.swarmsimulator.io.StandardWriter;
-import it.unicam.cs.pa.swarmsimulator.model.Environment;
-import it.unicam.cs.pa.swarmsimulator.model.PlainEnvironment;
-import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainEnvironment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
 import it.unicam.cs.pa.swarmsimulator.model.area.CircleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;

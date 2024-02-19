@@ -1,7 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.io;
 
-import it.unicam.cs.pa.swarmsimulator.model.Environment;
-import it.unicam.cs.pa.swarmsimulator.model.Position;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Position;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
 
 import java.io.BufferedReader;

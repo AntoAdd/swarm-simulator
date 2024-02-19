@@ -1,6 +1,6 @@
 package it.unicam.cs.pa.swarmsimulator.model.area;
 
-import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
 
 import java.util.Objects;
 

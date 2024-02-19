@@ -1,7 +1,10 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.execution;
 
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
 import it.unicam.cs.pa.swarmsimulator.model.commands.*;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Position;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Direction;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
 import it.unicam.cs.pa.swarmsimulator.model.robot.SignalingCondition;

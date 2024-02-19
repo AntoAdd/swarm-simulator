@@ -1,189 +1,35 @@
-Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=57.735575694543925, y=-80.78592624915287}}
-{Robot: 2, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-49.248653222502355, y=54.19943260443648}}
-{Robot: 3, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-28.46293456042267, y=11.823319127076681}}
-{Robot: 4, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-20.318757388835063, y=-1.5915109874080513}}
-{Robot: 0, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-25.96462628175329, y=-9.960575910219937}}
+Environment={Robot: 1, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=47.934816870951416, y=-12.66324769966587}}
+{Robot: 2, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-8.572916398262642, y=-71.8120699526055}}
+{Robot: 0, speed: 0.0, dir: 0.0, signal: , PlainLocation{x=-40.067600989948915, y=65.58107977223386}}
 
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
+Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='F', width=20.0, height=15.0}]
 
 
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=57.735575694543925, y=-80.78592624915287}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=-49.248653222502355, y=54.19943260443648}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=-28.46293456042267, y=11.823319127076681}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=-20.318757388835063, y=-1.5915109874080513}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=-25.96462628175329, y=-9.960575910219937}}
+Environment={Robot: 1, speed: 30.0, dir: 149.1448053117482, signal: , PlainLocation{x=47.934816870951416, y=-12.66324769966587}}
+{Robot: 2, speed: 30.0, dir: 77.20954345971445, signal: , PlainLocation{x=-8.572916398262642, y=-71.8120699526055}}
+{Robot: 0, speed: 30.0, dir: -47.987379957024274, signal: , PlainLocation{x=-40.067600989948915, y=65.58107977223386}}
 
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
+Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='F', width=20.0, height=15.0}]
 
 
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=43.773831894543925, y=-54.23277744915286}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=-25.202551622502355, y=36.26106610443648}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=1.5034141395773268, y=10.402777127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=7.703092111164935, y=9.121843012591947}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=0.2662118182467097, y=4.597691189780063}}
+Environment={Robot: 1, speed: 30.0, dir: 149.1448053117482, signal: , PlainLocation{x=22.180829970951415, y=2.7228550003341283}}
+{Robot: 2, speed: 30.0, dir: 77.20954345971445, signal: , PlainLocation{x=-1.9313342982626418, y=-42.5564827526055}}
+{Robot: 0, speed: 30.0, dir: -47.987379957024274, signal: , PlainLocation{x=-19.988772589948915, y=43.291157172233866}}
 
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
+Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='F', width=20.0, height=15.0}]
 
 
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=29.812088094543924, y=-27.67962864915286}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=-1.156450022502355, y=18.32269960443648}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=31.469762839577324, y=8.982235127076683}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=35.72494161116494, y=19.835197012591948}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=26.49704991824671, y=19.155958289780063}}
+Environment={Robot: 1, speed: 30.0, dir: 149.1448053117482, signal: , PlainLocation{x=-3.5731569290485865, y=18.108957700334127}}
+{Robot: 2, speed: 30.0, dir: 77.20954345971445, signal: , PlainLocation{x=4.710247801737358, y=-13.300895552605496}}
+{Robot: 0, speed: 30.0, dir: -47.987379957024274, signal: , PlainLocation{x=0.09005581005108354, y=21.001234572233866}}
 
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
+Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='F', width=20.0, height=15.0}]
 
 
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=15.850344294543925, y=-1.126479849152858}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=22.889651577497645, y=0.38433310443647883}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=61.436111539577325, y=7.5616931270766825}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=63.74679111116494, y=30.548551012591947}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=52.72788801824671, y=33.71422538978006}}
+Environment={Robot: 1, speed: 30.0, dir: 149.1448053117482, signal: , PlainLocation{x=-29.327143829048588, y=33.495060400334125}}
+{Robot: 2, speed: 30.0, dir: 77.20954345971445, signal: , PlainLocation{x=11.351829901737357, y=15.954691647394505}}
+{Robot: 0, speed: 30.0, dir: -47.987379957024274, signal: , PlainLocation{x=20.168884210051083, y=-1.2886880277661348}}
 
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=1.888600494543926, y=25.426668950847144}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=46.935753177497645, y=-17.554033395563522}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=91.40246023957732, y=6.141151127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=91.76864061116494, y=41.261905012591946}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=78.95872611824672, y=48.27249248978006}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-12.073143305456073, y=51.97981775084715}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=70.98185477749765, y=-35.49239989556352}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=121.36880893957732, y=4.720609127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=119.79049011116494, y=51.97525901259195}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=105.18956421824672, y=62.830759589780065}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-26.03488710545607, y=78.53296655084715}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=95.02795637749765, y=-53.43076639556352}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=151.33515763957732, y=3.300067127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=147.81233961116493, y=62.688613012591944}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=131.42040231824672, y=77.38902668978007}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-39.99663090545607, y=105.08611535084715}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=119.07405797749765, y=-71.36913289556352}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=181.30150633957732, y=1.879525127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=175.83418911116493, y=73.40196701259194}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=157.65124041824672, y=91.94729378978006}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-53.95837470545607, y=131.63926415084717}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=143.12015957749765, y=-89.30749939556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=211.2678550395773, y=0.458983127076682}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=203.85603861116493, y=84.11532101259193}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=183.88207851824671, y=106.50556088978006}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-67.92011850545607, y=158.19241295084717}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=167.16626117749763, y=-107.24586589556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=241.2342037395773, y=-0.961558872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=231.87788811116494, y=94.82867501259193}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=210.11291661824671, y=121.06382798978005}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-67.92011850545607, y=158.19241295084717}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=167.16626117749763, y=-107.24586589556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=241.2342037395773, y=-0.961558872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=231.87788811116494, y=94.82867501259193}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=210.11291661824671, y=121.06382798978005}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-81.88186230545607, y=184.74556175084717}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=191.21236277749762, y=-125.18423239556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=271.20055243957734, y=-2.382100872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=259.89973761116494, y=105.54202901259193}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=236.34375471824671, y=135.62209508978006}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-95.84360610545606, y=211.29871055084718}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=215.2584643774976, y=-143.12259889556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=301.16690113957736, y=-3.802642872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=287.9215871111649, y=116.25538301259192}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=262.57459281824674, y=150.18036218978006}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-109.80534990545605, y=237.85185935084718}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=239.3045659774976, y=-161.06096539556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=331.1332498395774, y=-5.223184872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=315.9434366111649, y=126.96873701259192}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=288.80543091824677, y=164.73862928978005}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-123.76709370545605, y=264.40500815084715}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=263.3506675774976, y=-178.99933189556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=361.0995985395774, y=-6.6437268729233185}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=343.96528611116486, y=137.6820910125919}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=315.0362690182468, y=179.29689638978004}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-123.76709370545605, y=264.40500815084715}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=263.3506675774976, y=-178.99933189556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=361.0995985395774, y=-6.6437268729233185}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=343.96528611116486, y=137.6820910125919}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=315.0362690182468, y=179.29689638978004}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-137.72883750545606, y=290.9581569508472}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=287.39676917749756, y=-196.93769839556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=391.06594723957744, y=-8.064268872923318}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=371.98713561116483, y=148.39544501259192}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=341.2671071182468, y=193.85516348978004}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-151.69058130545605, y=317.5113057508472}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=311.44287077749755, y=-214.87606489556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=421.03229593957747, y=-9.484810872923317}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=400.0089851111648, y=159.10879901259193}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=367.49794521824685, y=208.41343058978003}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-165.65232510545604, y=344.06445455084724}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=335.48897237749753, y=-232.81443139556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=450.9986446395775, y=-10.905352872923316}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=428.0308346111648, y=169.82215301259194}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=393.7287833182469, y=222.97169768978003}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
-
-
-Environment={Robot: 1, speed: 30.0, dir: 117.73555961802417, signal: , PlainLocation{x=-179.61406890545604, y=370.6176033508473}}
-{Robot: 2, speed: 30.0, dir: -36.72289965631457, signal: , PlainLocation{x=359.5350739774975, y=-250.75279789556353}}
-{Robot: 3, speed: 30.0, dir: -2.714050385666076, signal: , PlainLocation{x=480.9649933395775, y=-12.325894872923316}}
-{Robot: 4, speed: 30.0, dir: 20.92292705758503, signal: , PlainLocation{x=456.05268411116475, y=180.53550701259195}}
-{Robot: 0, speed: 30.0, dir: 29.030528410813712, signal: , PlainLocation{x=419.9596214182469, y=237.52996478978002}}
-
-Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='B', width=20.0, height=15.0}]
+Areas=[CircleArea{centerPosition=PlainLocation{x=-20.0, y=40.0}, signaledCondition='A', radius=10.0}, RectangleArea{centerPosition=PlainLocation{x=10.0, y=10.0}, signaledCondition='F', width=20.0, height=15.0}]
 
 

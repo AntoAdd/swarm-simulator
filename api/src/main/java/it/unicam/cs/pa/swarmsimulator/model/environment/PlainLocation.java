@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.environment;
 
 import it.unicam.cs.pa.swarmsimulator.model.robot.Direction;
 

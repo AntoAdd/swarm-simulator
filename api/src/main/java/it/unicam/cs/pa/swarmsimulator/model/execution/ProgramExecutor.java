@@ -1,5 +1,7 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.execution;
 
+import it.unicam.cs.pa.swarmsimulator.model.environment.Environment;
+import it.unicam.cs.pa.swarmsimulator.model.environment.Position;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.RobotState;
 
 /**

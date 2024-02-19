@@ -1,4 +1,4 @@
-package it.unicam.cs.pa.swarmsimulator.model;
+package it.unicam.cs.pa.swarmsimulator.model.environment;
 
 /**
  * This interface represents a position in the environment.

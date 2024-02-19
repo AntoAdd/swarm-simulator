@@ -4,7 +4,7 @@
 package it.unicam.cs.pa.swarmsimulator.app;
 
 import it.unicam.cs.pa.swarmsimulator.io.*;
-import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.environment.PlainLocation;
 import it.unicam.cs.pa.swarmsimulator.model.Simulator;
 import it.unicam.cs.pa.swarmsimulator.model.SwarmSimulator;
 import it.unicam.cs.pa.swarmsimulator.model.robot.StandardFactory;
@@ -15,29 +15,31 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class App {
+    private static final double DEFAULT_DT = 1.0;
+    private static final double DEFAULT_TIME = 20.0;
+    private static final int NUM_OF_ROBOTS = 5;
     public static void main(String[] args) throws FollowMeParserException, IOException {
         EnvironmentBuilder<StandardState, PlainLocation> builder = new StandardBuilder(
             new FollowMeParser(new ProgramParserHandler()), new StandardFactory()
         );
-
         EnvironmentWriter<StandardState, PlainLocation> writer = new StandardWriter();
 
         File envFile = new File("src/main/resources/robot_environment.txt");
         File programFile = new File("src/main/resources/robot_program.txt");
         File resultsFile = new File("src/main/resources/simulation_results.txt");
 
-        Simulator s = new SwarmSimulator(
-            builder,
-            writer,
-            envFile,
-            programFile,
-            resultsFile,
-            5
-        );
-
         PrintWriter w = new PrintWriter(resultsFile);
         w.print("");
         w.close();
-        s.simulate(1, 20);
+
+        Simulator simulator;
+
+        if (args.length > 0){
+            simulator = new SwarmSimulator(builder, writer, envFile, programFile, resultsFile, Integer.parseInt(args[2]));
+            simulator.simulate(Double.parseDouble(args[0]), Double.parseDouble(args[1]));
+        } else {
+            simulator = new SwarmSimulator(builder, writer, envFile, programFile, resultsFile, NUM_OF_ROBOTS);
+            simulator.simulate(DEFAULT_DT, DEFAULT_TIME);
+        }
     }
 }
