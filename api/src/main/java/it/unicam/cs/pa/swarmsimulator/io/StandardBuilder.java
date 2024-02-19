@@ -8,7 +8,6 @@ import it.unicam.cs.pa.swarmsimulator.model.area.RectangleArea;
 import it.unicam.cs.pa.swarmsimulator.model.area.SignalingArea;
 import it.unicam.cs.pa.swarmsimulator.model.robot.Robot;
 import it.unicam.cs.pa.swarmsimulator.model.robot.RobotFactory;
-import it.unicam.cs.pa.swarmsimulator.model.robot.SignalingCondition;
 import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 
 import java.io.File;
@@ -37,7 +36,7 @@ public class StandardBuilder implements EnvironmentBuilder<StandardState, PlainL
 
     private SignalingArea<PlainLocation> shapeDataToArea(ShapeData s) {
         if (s.shape().equalsIgnoreCase("circle"))
-            return new CircleArea(new PlainLocation(s.args()[2], s.args()[3]), s.label(), s.args()[4]);
-        return new RectangleArea(new PlainLocation(s.args()[2], s.args()[3]), s.label(), s.args()[4], s.args()[5]);
+            return new CircleArea(new PlainLocation(s.args()[0], s.args()[1]), s.label(), s.args()[2]);
+        return new RectangleArea(new PlainLocation(s.args()[0], s.args()[1]), s.label(), s.args()[2], s.args()[3]);
     }
 }

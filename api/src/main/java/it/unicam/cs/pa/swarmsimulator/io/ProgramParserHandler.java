@@ -45,7 +45,7 @@ public class ProgramParserHandler implements FollowMeParserHandler {
 
     private void addToParentCommand(RobotCommand command, RobotCommand parentCommand) {
         switch (parentCommand){
-            case Repeat repeat -> repeat.addCommand(command);
+            case Repeat repeat -> repeat.addSubcommand(command);
             case Until until -> until.addSubcommand(command);
             case Forever forever -> forever.addSubcommand(command);
             default -> throw new IllegalStateException("Unexpected value: " + command);

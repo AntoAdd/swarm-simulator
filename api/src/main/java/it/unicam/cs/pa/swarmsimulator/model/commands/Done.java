@@ -9,7 +9,7 @@ public record Done(RobotCommand containerCommand) implements RobotCommand {
 
     @Override
     public RobotCommand getCopy() {
-        return new Done(containerCommand.getCopy());
+        return null;
     }
 
     @Override

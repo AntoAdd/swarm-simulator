@@ -33,7 +33,7 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
 
     @Override
     public Pair<StandardState, PlainLocation> evaluate(Robot<StandardState> robot, RobotCommand command) {
-        return switch (command){
+        return switch (command) {
             case Move move -> evaluateMove(robot, move);
             case MoveRandom moveRandom -> evaluateMoveRandom(robot, moveRandom);
             case Repeat repeat -> evaluateRepeat(robot, repeat);
@@ -76,7 +76,7 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
     }
 
     private Pair<StandardState, PlainLocation> evaluateUntil(Robot<StandardState> robot, Until until) {
-        if (checkIfPerceived(robot, until.getCondition())){
+        if (checkIfPerceived(robot, until.getCondition())) {
             until.setHasMeatCondition(true);
             return new Pair<>(robot.getNavigationState(), evaluationEnvironment.getRobotPosition(robot));
         } else {
@@ -88,7 +88,7 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
 
     private boolean checkIfPerceived(Robot<StandardState> robot, SignalingCondition condition) {
         List<SignalingArea<PlainLocation>> areasForRobot = evaluationEnvironment.getAreasOccupiedBy(robot);
-        if (!areasForRobot.isEmpty()){
+        if (!areasForRobot.isEmpty()) {
             for (SignalingArea<PlainLocation> a :
                 areasForRobot) {
                 if (a.getCondition().equals(condition.getValue()))
@@ -132,10 +132,10 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
             robot, follow.condition().getValue(), follow.distance()
         );
         Direction direction = evaluationEnvironment.getRobotPosition(robot).directionTo(calculateRandomTarget(
-                new PlainLocation(-follow.distance(), -follow.distance()),
-                new PlainLocation(follow.distance(), follow.distance()))
-            );
-        if (!signalingRobots.isEmpty()){
+            new PlainLocation(-follow.distance(), -follow.distance()),
+            new PlainLocation(follow.distance(), follow.distance()))
+        );
+        if (!signalingRobots.isEmpty()) {
             PlainLocation meanPosition = calculateMeanPosition(evaluationEnvironment.getPositionsOf(signalingRobots));
             direction = evaluationEnvironment.getRobotPosition(robot).directionTo(meanPosition);
         }
@@ -148,8 +148,8 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
     private PlainLocation calculateMeanPosition(List<PlainLocation> positions) {
         double xSum = 0;
         double ySum = 0;
-        for (PlainLocation p:
-             positions) {
+        for (PlainLocation p :
+            positions) {
             xSum += p.x();
             ySum += p.y();
         }
@@ -166,7 +166,7 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
 
     private Pair<StandardState, PlainLocation> evaluateUnsignal(Robot<StandardState> robot, Unsignal unsignal) {
         StandardState state = robot.getNavigationState();
-        if (state.getCondition().equals(unsignal.condition())){
+        if (state.getCondition().equals(unsignal.condition())) {
             return new Pair<>(
                 new StandardState(state.getSpeed(), state.getDirection(), new SignalingCondition("")),
                 evaluationEnvironment.getRobotPosition(robot)
@@ -176,9 +176,10 @@ public class StandardEvaluator implements CommandEvaluator<StandardState, PlainL
     }
 
     private Pair<StandardState, PlainLocation> evaluateRepeat(Robot<StandardState> robot, Repeat repeat) {
-        if (!repeat.hasFinishedExecution()){
+        if (!repeat.hasFinishedExecution()) {
             RobotCommand nextSubcommand = repeat.getNextSubcommand();
-            repeat.setNextSubcommandIndex(repeat.getNextSubcommandIndex() + 1);
+            if (nextSubcommand.hasFinishedExecution() && !(nextSubcommand instanceof Done))
+                repeat.setNextSubcommandIndex(repeat.getNextSubcommandIndex() + 1);
             return evaluate(robot, nextSubcommand);
         }
         return new Pair<>(robot.getNavigationState(), evaluationEnvironment.getRobotPosition(robot));

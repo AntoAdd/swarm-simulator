@@ -3,8 +3,41 @@
  */
 package it.unicam.cs.pa.swarmsimulator.app;
 
-public class App {
-    public static void main(String[] args) {
+import it.unicam.cs.pa.swarmsimulator.io.*;
+import it.unicam.cs.pa.swarmsimulator.model.PlainLocation;
+import it.unicam.cs.pa.swarmsimulator.model.Simulator;
+import it.unicam.cs.pa.swarmsimulator.model.SwarmSimulator;
+import it.unicam.cs.pa.swarmsimulator.model.robot.StandardFactory;
+import it.unicam.cs.pa.swarmsimulator.model.robotstate.StandardState;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class App {
+    public static void main(String[] args) throws FollowMeParserException, IOException {
+        EnvironmentBuilder<StandardState, PlainLocation> builder = new StandardBuilder(
+            new FollowMeParser(new ProgramParserHandler()), new StandardFactory()
+        );
+
+        EnvironmentWriter<StandardState, PlainLocation> writer = new StandardWriter();
+
+        File envFile = new File("app/src/main/resources/robot_environment.txt");
+        File programFile = new File("app/src/main/resources/robot_program.txt");
+        File resultsFile = new File("app/src/main/resources/simulation_results.txt");
+
+        Simulator s = new SwarmSimulator(
+            builder,
+            writer,
+            envFile,
+            programFile,
+            resultsFile,
+            5
+        );
+
+        PrintWriter w = new PrintWriter(resultsFile);
+        w.print("");
+        w.close();
+        s.simulate(1, 20);
     }
 }

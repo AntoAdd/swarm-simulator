@@ -47,12 +47,14 @@ public final class Forever implements RobotCommand {
 
     @Override
     public RobotCommand getCopy() {
-        List<RobotCommand> subcommandsCopy = new ArrayList<>();
-        for (RobotCommand c :
-            subcommands) {
-            subcommandsCopy.add(c.getCopy());
+        Forever copy = new Forever();
+        for (RobotCommand c : subcommands) {
+            if (c instanceof Done)
+                copy.addSubcommand(new Done(copy));
+            else
+                copy.addSubcommand(c.getCopy());
         }
-        return new Forever(subcommandsCopy);
+        return copy;
     }
 
     @Override

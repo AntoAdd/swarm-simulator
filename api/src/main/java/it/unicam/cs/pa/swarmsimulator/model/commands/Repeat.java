@@ -25,7 +25,7 @@ public final class Repeat implements RobotCommand {
         this.nextSubcommandIndex = 0;
     }
 
-    public void addCommand(RobotCommand command){
+    public void addSubcommand(RobotCommand command) {
         subcommands.add(Objects.requireNonNull(command));
     }
 
@@ -45,11 +45,11 @@ public final class Repeat implements RobotCommand {
         this.nextSubcommandIndex = nextSubcommandIndex;
     }
 
-    public void decreaseRemainingReps(){
+    public void decreaseRemainingReps() {
         remainingReps--;
     }
 
-    public RobotCommand getNextSubcommand(){
+    public RobotCommand getNextSubcommand() {
         return this.subcommands.get(nextSubcommandIndex);
     }
 
@@ -65,12 +65,14 @@ public final class Repeat implements RobotCommand {
 
     @Override
     public RobotCommand getCopy() {
-        List<RobotCommand> subcommandsCopy = new ArrayList<>();
-        for (RobotCommand c :
-            subcommands) {
-            subcommandsCopy.add(c.getCopy());
+        Repeat copy = new Repeat(reps);
+        for (RobotCommand c : subcommands) {
+            if (c instanceof Done)
+                copy.addSubcommand(new Done(copy));
+            else
+                copy.addSubcommand(c.getCopy());
         }
-        return new Repeat(reps, subcommandsCopy);
+        return copy;
     }
 
     @Override

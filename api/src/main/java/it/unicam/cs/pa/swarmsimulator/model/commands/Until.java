@@ -64,12 +64,14 @@ public final class Until implements RobotCommand {
 
     @Override
     public RobotCommand getCopy() {
-        List<RobotCommand> subcommandsCopy = new ArrayList<>();
-        for (RobotCommand c :
-            subcommands) {
-            subcommandsCopy.add(c.getCopy());
+        Until copy = new Until(condition);
+        for (RobotCommand c : subcommands) {
+            if (c instanceof Done)
+                copy.addSubcommand(new Done(copy));
+            else
+                copy.addSubcommand(c.getCopy());
         }
-        return new Until(new SignalingCondition(condition.getValue()), subcommandsCopy);
+        return copy;
     }
 
     @Override

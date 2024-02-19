@@ -20,7 +20,7 @@ public record PlainLocation(double x, double y) implements Position<PlainLocatio
 
     private static double getRandomValue() {
         Random r = new Random();
-        return Double.MAX_VALUE * r.nextDouble() * (r.nextBoolean() ? 1 : -1);
+        return 100.0 * r.nextDouble() * (r.nextBoolean() ? 1 : -1);
     }
 
     public double distanceFrom(PlainLocation location){

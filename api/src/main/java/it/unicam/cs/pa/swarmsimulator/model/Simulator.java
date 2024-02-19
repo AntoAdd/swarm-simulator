@@ -1,5 +1,7 @@
 package it.unicam.cs.pa.swarmsimulator.model;
 
+import java.io.IOException;
+
 /**
  * This interface represents a simulator that is responsible for executing a simulation of the system for a given
  * amount of time.
@@ -11,5 +13,5 @@ public interface Simulator {
      * @param dt the required time for the execution of a single robot command.
      * @param time the time amount for which the simulation has to run.
      */
-    void simulate(double dt, double time);
+    void simulate(double dt, double time) throws IOException;
 }
